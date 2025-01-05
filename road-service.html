@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Service Reporting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Road Service Reporting</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="waste-management.html">Waste Management</a>
+        <a href="stray-animals.html">Stray Animals</a>
+        <a href="neighborhood-monitoring.html">Neighborhood Monitoring</a>
+    </nav>
+    <main>
+        <section class="module">
+            <img src="https://thumbs.dreamstime.com/b/using-mobile-phone-driving-his-bike-dangerous-mobile-phone-distraction-city-traffic-road-safety-concept-119798315.jpg" alt="Road Service">
+            <p>Report road violations like unauthorized parking, wrong-way traveling, and more.</p>
+            <form id="road-service-form">
+                <label for="road-violation">Select Violation:</label>
+                <select id="road-violation">
+                    <option value="Unauthorized Parking">Unauthorized Parking</option>
+                    <option value="Wrong Way Traveling">Wrong Way Traveling</option>
+                    <option value="Signal Jumping">Signal Jumping</option>
+                    <option value="Reckless Driving">Reckless Driving</option>
+                </select>
+                <label for="road-phone">Phone Number:</label>
+                <input type="tel" id="road-phone" placeholder="Enter your phone number" required>
+                <label for="road-details">Describe the issue (optional):</label>
+                <textarea id="road-details" rows="4" placeholder="Provide details..."></textarea>
+                <label for="road-photo">Upload a photo:</label>
+                <input type="file" id="road-photo" accept="image/*">
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Responsible Citizen | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
